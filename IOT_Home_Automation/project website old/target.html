@@ -1,0 +1,198 @@
+<body background="b.png">
+<script type="text/javascript">
+        setTimeout (function(){
+        document.getElementById('submitButton').disabled = null;
+        },15000);
+
+        var countdownNum = 15;
+        incTimer();
+
+        function incTimer(){
+        setTimeout (function(){
+            if(countdownNum != 0){
+            countdownNum--;
+            document.getElementById('timeLeft').innerHTML = 'Time left: ' + countdownNum + ' seconds';
+            incTimer();
+            } else {
+            document.getElementById('timeLeft').innerHTML = 'Ready!';
+            }
+        },1000);
+        }
+    </script>
+
+
+
+<style>
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+margin-left:10px;
+}
+#a{
+float:left;
+margin:40px;
+border:1px;
+}
+#a {
+    border-radius: 50px;
+    border: 3px solid #ff9900;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+}
+#main{
+margin-top:100px;
+}
+#heading{
+font-size:80px;
+}
+</style>
+
+<center><p ID="heading"><font color="white">HOME AUTOMATION</p></center>
+<center><p style=" margin-top:-50px;font-size:30px"><font color="white">-By Shivam Parashar</p></center>
+<div id="main">
+<div id="a">
+<center><h3>OPERATING CODE<h3></center>
+<center>
+<ul id="menu">
+<li>
+<form method="get" action="https://api.thingspeak.com/update">
+<input type="hidden" name="api_key" value="5R9Q3UDPVB86DXTJ"></input>
+<input type="text" name="field1" >Please enter value</input>
+<input type="submit" disabled="disabled" id="submitButton" />
+        <p id="timeLeft">Time Left: 15 seconds</p>
+<p><b>Here the value of 4 appliances has to be entered</b></p>
+<p><b>In form of a 4 digit no like,0000,1111 or 0101</b></p>
+<p><b>The 1 means on and the 0 means off</b></p>
+<p><b>Sequence is appliance 1-2-3-4</b></p>
+</form>
+</li>
+
+</ul>
+</center>
+</div>
+
+
+<div id="a">
+<center><h3>CURRENT STATUS<h3></center>
+<ul id="menu">
+<li>
+<form>
+<script>
+window.setInterval("reloadIFrame();", 5000);
+function reloadIFrame() {
+ document.getElementById("chat").src="https://api.thingspeak.com/channels/142811/fields/1.json?results=2";
+}
+</script>
+
+<iframe id="chat" name="chat" src="https://api.thingspeak.com/channels/142811/fields/1.json?results=2" width="400;" height="200" style="border:none;"></iframe>
+
+</form>
+</li>
+
+</ul>
+</div>
+
+</div>
+<body background="b.png">
+<script type="text/javascript">
+        setTimeout (function(){
+        document.getElementById('submitButton').disabled = null;
+        },15000);
+
+        var countdownNum = 15;
+        incTimer();
+
+        function incTimer(){
+        setTimeout (function(){
+            if(countdownNum != 0){
+            countdownNum--;
+            document.getElementById('timeLeft').innerHTML = 'Time left: ' + countdownNum + ' seconds';
+            incTimer();
+            } else {
+            document.getElementById('timeLeft').innerHTML = 'Ready!';
+            }
+        },1000);
+        }
+    </script>
+
+
+
+<style>
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+margin-left:10px;
+}
+#a{
+float:left;
+margin:40px;
+border:1px;
+}
+#a {
+    border-radius: 50px;
+    border: 3px solid #ff9900;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+}
+#main{
+margin-top:100px;
+}
+#heading{
+font-size:80px;
+}
+</style>
+
+<center><p ID="heading"><font color="white">HOME AUTOMATION</p></center>
+<center><p style=" margin-top:-50px;font-size:30px"><font color="white">-By Shivam Parashar</p></center>
+<div id="main">
+<div id="a">
+<center><h3>OPERATING CODE<h3></center>
+<center>
+<ul id="menu">
+<li>
+<form method="get" action="https://api.thingspeak.com/update">
+<input type="hidden" name="api_key" value="5R9Q3UDPVB86DXTJ"></input>
+<input type="text" name="field1" >Please enter value</input>
+<input type="submit" disabled="disabled" id="submitButton" />
+        <p id="timeLeft">Time Left: 15 seconds</p>
+<p><b>Here the value of 4 appliances has to be entered</b></p>
+<p><b>In form of a 4 digit no like,0000,1111 or 0101</b></p>
+<p><b>The 1 means on and the 0 means off</b></p>
+<p><b>Sequence is appliance 1-2-3-4</b></p>
+</form>
+</li>
+
+</ul>
+</center>
+</div>
+
+
+<div id="a">
+<center><h3>CURRENT STATUS<h3></center>
+<ul id="menu">
+<li>
+<form>
+<script>
+window.setInterval("reloadIFrame();", 5000);
+function reloadIFrame() {
+ document.getElementById("chat").src="https://api.thingspeak.com/channels/142811/fields/1.json?results=2";
+}
+</script>
+
+<iframe id="chat" name="chat" src="https://api.thingspeak.com/channels/142811/fields/1.json?results=2" width="400;" height="200" style="border:none;"></iframe>
+
+</form>
+</li>
+
+</ul>
+</div>
+
+</div>
